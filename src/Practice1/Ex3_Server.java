@@ -47,7 +47,6 @@ public class Ex3_Server {
                     for (int i = server.clientList.size() - 1; i >= 0; i--) {
                         Process clientProcess = server.clientList.get(i);
                         try {
-
                             DataOutputStream dos = new DataOutputStream(clientProcess.socket.getOutputStream());
 
                             if (clientProcess != this) {
